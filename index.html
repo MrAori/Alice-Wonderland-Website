@@ -23,12 +23,15 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #325436">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #751f1f">
 
     <!-- Nav -->
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">Alice and Wonderland Exibition</a>
+      <a class="navbar-brand" href="#">
+        <img src="images/Bunker-Icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        Bunker - Centre For The Arts
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault"
         aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,55 +42,66 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Booking</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Missing Page</a>
+            <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
           </li>
         </ul>
       </div>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Go</button>
-      </form>
     </div>
 
   </nav>
 
   <!-- Main -->
   <main class="container">
+    <!---Alice's Adventures in Wonderland Section-->
     <div class = "Container py-1">
-      <h1 class="display-1 text-center">Welcome to the wonderland.</h1>
+      <h1 class="display-4 text-center">Down the Rabbit Hole:</h1>
+      <p class="text-center">Explorations of Alice's Adventures in Wonderland</p>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Alice_big_alice.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Alice_pool_tears_mouse.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Alice_mad_hatter.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class = "Container py-1">
+      <h1 class="display-4 text-center">First Fridays</h1>
+      <p class="text-center">First Fridays are a Night for all of your cites Creative Quarter Galleries to stay open late and show work and art. All of this happens every First Friday of the Month.</p>
+    </div>
+
+    <div class = "Container py-1">
+      <h1 class="display-4 text-center">First Fridays</h1>
+      <p class="text-center">First Fridays are a Night for all of Bristol's Creative Quarter Galleries to stay open late and show work and art. All of this happens every First Friday of the Month.</p>
     </div>
     <!-- Header -->
-    <header class= "row">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <header>
+
     </header>
+
+
   </main>
 
   <!-- Footer -->
   <footer class=" footer mt-auto container-fluid py-3 fixed-bottom bg-light text-center">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus enim lacus</p>
+      <p>Created by Mason Howe in Bootstrap 5</p>
   </footer>
 
   <!-- bootstrap js bundle from a CDN, you will need to be online for this to work -->
